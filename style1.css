@@ -116,3 +116,28 @@
       width: 150%;
       height:100%;
   }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  .ti{
+    width:60%;
+  }
+  .tii{
+    width:70%;
+  }
+  .tiii{
+    width:100%;
+  }
+
+  .yu{
+    width: 120%;
+  }
