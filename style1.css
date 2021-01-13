@@ -1,0 +1,108 @@
+*{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; @media all and (min-width: 992px) { // CSScode }} 
+
+
+.img{
+    width: 1.5%;
+    height: 1.5%;
+}
+
+
+.img2{
+    width: 1.4%;
+    height: 1.5%;
+}
+
+.gg{
+    width: 15%;
+    height: 2%;
+}
+
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .lg{
+    width:15%;
+    height: 100%;
+  }
+
+  .bag{
+    width: 4% ;
+  }
+  .tb{
+    width: 300px;
+  border: 2px solid rgb(173, 173, 173);
+  padding: 50px;
+  margin: 20px;
+  }
+
+  details[open] summary ~ *
+  {
+    animation:open 0.3s ease-in-out;
+  }
+  @Keyframes open
+  {
+    0%
+    {
+      opacity:0'
+    }
+    100%
+    {
+      opacity:1;
+    }
+  }
+
+  details summary::-webkit-details-marker
+  {
+    display:none;
+  }
+  details summary
+  {
+    width:100%;
+    padding:0.rem 0;
+    border:1px solid rgb(173, 173, 173);
+    position:relative;
+    cursor:pointer;
+    font-size:1.2em;
+    font-weight:300;
+    life-style:none;
+  }
+
+  details summary:after
+  {
+    content:"+";
+    color:black;
+    position:absolute;
+    font-size:1.75rem;
+    line-height:0;
+    margin-top:0.75rem;
+    right:0;
+    font-weight:200;
+    transform-origin:center;
+    transition:200ms linear;
+  }
+  details[open] summary:after
+  {
+    transfomation:rotate(45deg);
+    font-size:2rem;
+  }
+  details summary
+  {
+    outline:0;
+  }
+  details padding
+  {
+    font-size:0.95rem;
+    margin:0 01rem;
+    padding-top:1rem;
+  }
