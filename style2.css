@@ -63,6 +63,9 @@ a{
 .md-class{
 	display: none;
 }
+.mm{
+	display: block;
+}
 
 
 
@@ -93,6 +96,10 @@ a{
 }
 .sidenav {padding-top: 15px;}
 .sidenav a {font-size: 18px;}
+
+.mm{
+	display: none;
+}
 
 }
 
@@ -314,7 +321,7 @@ a:hover{
 }
 
 .table-font{
-	font-size: 12px;
+	font-size: 20px;
 }
 
 a.collapsed:link{color: black; text-decoration: none;}
@@ -438,7 +445,7 @@ a.collapsed:link{color: black; text-decoration: none;}
   top: 0;
   left: 0;
   background-color: white;
-  box-shadow: 50px 1px 50px grey;
+  box-shadow: 50px 1px 25px grey;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -476,3 +483,7 @@ a.collapsed:link{color: black; text-decoration: none;}
 	height:auto;
 }
 
+.search-mobile{
+	width: ;
+	height: ;
+}

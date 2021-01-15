@@ -221,8 +221,8 @@
 			</div>
 		</div>
 		<!------------------------------------------------IMAGE-Mobile------------------------------------------------------>
-		<div class="row">
-			<div class="col-2 text-center" style="padding-top:15px;">
+		<div class="row " >
+			<div class="col-2 text-center mm" style="padding-top:20px;">
 				<div id="mySidenav" class="sidenav" >
 				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				  <a href="#">About</a>
@@ -234,18 +234,38 @@
 				<span style="font-size:20px;cursor:pointer" class="nav-btn" onclick="openNav()">&#9776;</span>
 			</div>
 			
-			<div class="col-7">
+			<div class="col-7 mm m-auto">
 			<img class="m-auto lm" src="img/logo.png" alt="logo">
 			</div>
 			
-			<div class="col-3">
+			<div class="col-3 mm">
 			<img class="bm" src="img/bag.jpg" alt="bag">
 			</div>
 			
 		</div>
+	</div>	
+		<div class="container" style="background-color: #9fc126">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-3 py-3 mm" >
+						<div class="dropdown1">
+							<button class="dropbtn d-m">English <img class="down" src="img/down.png"></button>
+							<div class="dropdown-content">
+								<a href="#">English</a>
+								<a href="#">Nederlands</a>
+								<a href="#">French</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-9 py-3 mm" style="background-color: #9fc126">
+						<input class="search-mobile" type="text" placeholder="Search Products...">
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-------------------------------------------------------CONTAINER--------------------------------------------------------------->
 		
-	</div>	
+		
 	<div class="container-fluid" style="background-color: #f5f3f3;">
 		<div class="container  conf1" style="background-color: white;">
 		<div class="row pt-3">
@@ -618,12 +638,12 @@ window.onclick = function(event) {
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-  document.body.style.backgroundColor = "white";
+  
 }
 </script>
 
