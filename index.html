@@ -10,7 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -97,17 +97,97 @@
 									All Categries
 								</div>
 								<div class="dropdown-menu dm" aria-labelledby="dropdownMenuButton" style="border-color: white;" >
-									<a class="dropdown-item" href="#">Smartphone</a>
-									<a class="dropdown-item" href="#">iPhone</a>
-									<a class="dropdown-item" href="#">Tablette</a>
-									<a class="dropdown-item" href="#">Tablette</a>
-									<a class="dropdown-item" href="#">Tablette</a>
+									<div class="row font-ddn">
+										<div class="col-lg-3 col-md-3">
+											<dl>
+											  <a class="dropdown-item" href="#"><dt>Pc Portable</dt></a>
+											  <br>
+											  <a class="dropdown-item" href="#"><dd>Acer</dd></a>
+											  <a class="dropdown-item" href="#"><dd>Asus</dd></a>
+											  <a class="dropdown-item" href="#"><dd>Dell</dd></a>
+											  <a class="dropdown-item" href="#"><dd>FUJITSU SIEMENS</dd></a>
+											  <a class="dropdown-item" href="#"><dd>HP</dd></a>
+											  <a class="dropdown-item" href="#"><dd>LENOVO</dd></a>
+											  <a class="dropdown-item" href="#"><dd>SURFACE MICROSOFT</dd></a>
+											  <a class="dropdown-item" href="#"><dd>PACKARD BELL</dd></a>
+											  <a class="dropdown-item" href="#"><dd>PANASONIC</dd></a>
+											  <a class="dropdown-item" href="#"><dd>SONY</dd></a>
+											  <a class="dropdown-item" href="#"><dd>SAMSUNG</dd></a>
+											</dl>
+										</div>
+										<div class="col-lg-3 col-md-3">
+											<dl>
+											  <a class="dropdown-item" href="#"><dt>Smartphone</dt></a>
+											  <br>
+											  <a class="dropdown-item" href="#"><dd>iPhone</dd></a>
+											</dl>
+											<dl>
+											  <a class="dropdown-item" href="#"><dt>MacBooke</dt></a>
+											  <br>
+											  <a class="dropdown-item" href="#"><dd>MacBook Air</dd></a>
+											  <a class="dropdown-item" href="#"><dd>Macbook Pro</dd></a>
+											  <a class="dropdown-item" href="#"><dd>Boîtier blanc MacBook</dd></a>
+											</dl>
+											<dl>
+											  <a class="dropdown-item" href="#"><dt>Logiciel</dt></a>
+											  <br>
+											  <a class="dropdown-item" href="#"><dd>ANTIVIRUS</dd></a>
+											  <a class="dropdown-item" href="#"><dd>Office</dd></a>
+											</dl>
+										</div>
+										<div class="col-lg-3 col-md-3">
+											<dl>
+											  <a class="dropdown-item" href="#"><dt>Tablette</dt></a>
+											  <br>
+											  <a class="dropdown-item" href="#"><dd>IPAD</dd></a>
+											  <a class="dropdown-item" href="#"><dd>Pavé tactile</dd></a>
+											  <a class="dropdown-item" href="#"><dd>Pavé tactile Windows</dd></a>
+											</dl>
+											
+											<dl>
+											  <a class="dropdown-item" href="#"><dt>Accessoires</dt></a>
+											  <br>
+											  <a class="dropdown-item" href="#"><dd>Cartes graphiques</dd></a>
+											  <a class="dropdown-item" href="#"><dd>Ecran</dd></a>
+											  <a class="dropdown-item" href="#"><dd>Station d'accueil</dd></a>
+											</dl>
+											
+											
+										</div>
+										<div class="col-lg-3 col-md-3">
+											<dl>
+												<a class="dropdown-item" href="#"><dt>Fixe PC</dt></a>
+												<br>
+												<a class="dropdown-item" href="#"><dd>Dell</dd></a>
+												<a class="dropdown-item" href="#"><dd>Ecran</dd></a>
+												<a class="dropdown-item" href="#"><dd>FUJITSU SIEMENS</dd></a>
+												<a class="dropdown-item" href="#"><dd>HP</dd></a>
+												<a class="dropdown-item" href="#"><dd>LENOVO</dd></a>
+											</dl>
+											<dl>
+												<a class="dropdown-item" href="#"><dt>iMac</dt></a>
+												<br>
+												<a class="dropdown-item" href="#"><dd>21,5''</dd></a>
+												<a class="dropdown-item" href="#"><dd>27"</dd></a>
+											</dl>
+											<dl>
+												<a class="dropdown-item" href="#"><dt>Film et TV</dt></a>
+												<br>
+												<a class="dropdown-item" href="#"><dd>Projecteurs</dd></a>
+											</dl>
+										</div>
+									</div>
 								</div>
 							</div>
+
+						
 						</div>
 					</div>
-					<div class="col-lg-1 col-md-1 col-12" >
+					<div class="col-lg-1 col-md-1 col-12 con" >
 						<img class="search2"  src="img/search2.png" alt="search">
+						<div class="overlay">
+							<img class="search3"  src="img/search2.png" alt="search">
+						</div>
 					</div>	
 						
 				</div>
@@ -500,6 +580,32 @@
 }
 $('.panel-group').on('hidden.bs.collapse', toggleIcon);
 $('.panel-group').on('shown.bs.collapse', toggleIcon);w
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 </script>
 
 

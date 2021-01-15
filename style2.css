@@ -27,6 +27,22 @@
 .md{
 	display: none;
 }
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+   padding-left: 16px;
+  overflow: hidden;
+  width: 150%;
+  height:0;
+  transition: .5s ease;
+}
+
+.con:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
 
 
 
@@ -179,7 +195,7 @@ a{
 	
 }
 
-.search2:hover {opacity: 0.6}
+
 .ddwn{
 	cursor: pointer;
 }
@@ -213,6 +229,14 @@ a.base-text:link{
 }
 
 a.base-text:hover{
+	color: #9fc126;
+}
+
+a:link{
+	color: black; text-decoration:none;
+}
+
+a:hover{
 	color: #9fc126;
 }
 
@@ -368,3 +392,33 @@ a.collapsed:link{color: black; text-decoration: none;}
 	
 
 }
+
+.search3{
+	height:40px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	width:40px;
+	background-color: #687d1b;
+	opacity: 1;
+	transition: 0.3s;
+	cursor:pointer;
+	border-radius: 0px 18px 18px 0px;
+	
+}
+
+
+.dropdown-menu{
+	width: 1215px !important;
+	height: 425px !important;
+	position: absolute;
+	left: -250px !important;
+	top: 24px !important;
+}
+
+.font-ddn{
+	font-size: 15px;
+}
+
+
