@@ -198,7 +198,7 @@ a{
 }
 
 a.base-text:link{
-	color: black;
+	color: black; text-decoration:none;
 }
 
 a.base-text:hover{
@@ -218,91 +218,11 @@ a.base-text:hover{
 	height: 40px;
 }
 
-
-details summary::-webkit-details-marker
-{
-	display:none;
-}
-details summary
-{
-	width:100%;
-	padding:0.rem 0;
-	border:0.1px solid rgb(151, 148, 148);
-	position:relative;
-	cursor:pointer;
-	font-size:1.2em;
-	font-weight:300;
-	list-style:none;
-	
-}
-
-details summary:after
-{
-	content:"+";
-	color:rgb(0, 0, 0);
-	position:absolute;
-	font-size:1.75rem;
-	line-height:0;
-	margin-top:0.75rem;
-	right:0;
-	font-weight:200;
-	transform-origin:center;
-	transition:200ms linear;
-}
-	details[open] summary:after
-{
-transfomation:rotate(45deg);
-	font-size:2rem;
-}
-	details summary
-{
-	outline:0;
-}
-details padding
-{
-	font-size:0.95rem;
-	margin:0 01rem;
-	padding-top:1rem;
-}
-
-.conf{
-	background-color: white;
-}
-
-.conf1{
-	background-color: white;
-}
-.table-left{
-	border-style: solid;
-	border-width: 1px;
-}
-
-.accordion {
-
-
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-
-  overflow: hidden;
-}
-
-
-.panel-group .panel {
+/*******************************
+* Does not work properly if "in" is added after "collapse".
+* Get free snippets on bootpen.com
+*******************************/
+    .panel-group .panel {
         border-radius: 0;
         box-shadow: none;
         border-color: #EEEEEE;
@@ -312,7 +232,7 @@ details padding
         padding: 0;
         border-radius: 0;
         color: #212121;
-        background-color: #FAFAFA;
+        
         border-color: #EEEEEE;
     }
 
@@ -322,7 +242,6 @@ details padding
 
     .panel-title > a {
         display: block;
-        padding: 15px;
         text-decoration: none;
     }
 
@@ -336,11 +255,101 @@ details padding
     }
 
 /* ----- v CAN BE DELETED v ----- */
-body {
-    background-color: #26a69a;
-}
 
 .demo {
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.top-font{
+	font-size: 13px;
+}
+
+.table-font{
+	font-size: 12px;
+}
+
+a.collapsed:link{color: black; text-decoration: none;}
+
+
+.table-inside{
+	font-size: 12px;
+}
+
+.border-table{
+	border-style: solid;
+	border-width: 0.5px;
+	border-color: #EEEEEE;
+}
+
+
+.table-bg{
+	background-color: #9fc126;
+}
+
+.table-font-product1{
+	color: white;
+}
+.table-font-product{
+	font-size: 12px;
+	color: white;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 64vh !important;
+  }
+
+
+.tb1{
+	width: 150px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.tb2{
+	width: 150px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.tb3{
+	width: 150px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+
+.pc{
+	width: 130px;
+}
+
+.ip{
+	width: 120px;
+}
+
+.mac{
+	width: 160px;
+}
+
+.tb{
+	width: 180px;
+}
+
+.pc-text{
+	font-size: 15px;
+}
+.sp-text{
+	font-size: 15px;
+}
+.mc-text{
+	font-size: 15px;
+}
+.tb-text{
+	font-size: 15px;
+}
+
+.bd{
+	
+
 }
